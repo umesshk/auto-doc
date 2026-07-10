@@ -1,3 +1,6 @@
-from google.oauth2.credentials import Credentials
+title = input("Enter the title : ")
+shorts_link = input("Enter Shorts Link: ")
+original_link = input("Enter Original Link : ")
 
-print(Credentials)
+
+print(title, shorts_link, original_link)
