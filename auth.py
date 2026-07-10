@@ -16,7 +16,7 @@ def authenticate():
     creds = None
 
     if TOKEN_PATH.exists():
-        creds = Credentials.from_authorized_user_info(TOKEN_PATH, SCOPES)
+        creds = Credentials.from_authorized_user_file(TOKEN_PATH, SCOPES)
 
     if creds and creds.valid:
         return creds
